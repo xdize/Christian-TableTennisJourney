@@ -30,11 +30,7 @@ counters.forEach(counter => {
 
         }else{
 
-            if(target >= 20){
-                counter.innerText = target + "+";
-            }else{
-                counter.innerText = target;
-            }
+           counter.innerText = target + "+";
 
         }
 
