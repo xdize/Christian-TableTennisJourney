@@ -1,23 +1,3 @@
-const button = document.getElementById("showMore");
-const hiddenPhotos = document.querySelectorAll(".hidden-photo");
-
-let expanded = false;
-
-button.addEventListener("click", () => {
-
-    expanded = !expanded;
-
-    hiddenPhotos.forEach(photo => {
-
-        photo.style.display = expanded ? "block" : "none";
-
-    });
-
-    button.textContent = expanded ? "Show Less" : "Show More";
-
-});
-
-
 // ===============================
 // Gallery Lightbox
 // ===============================
