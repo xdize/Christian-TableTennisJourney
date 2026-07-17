@@ -1,36 +1,60 @@
+// ===============================
+// Gallery — Fan Stack + Expand
+// ===============================
+
+const galleryWrapper = document.querySelector(".gallery-wrapper");
+const galleryDiv     = document.querySelector(".gallery");
+const expandHint     = document.querySelector(".gallery-expand-hint");
+let   isExpanded     = false;
+
+// Click the stacked cards → expand grid
+galleryDiv.addEventListener("click", (e) => {
+
+    if (!isExpanded) {
+        // Expand into full grid
+        galleryWrapper.classList.add("expanded");
+        expandHint.classList.add("hidden");
+        isExpanded = true;
+
+        // Now wire up lightbox for ALL images
+        wireGalleryLightbox();
+
+    } else {
+        // Individual image click → lightbox (handled by wireGalleryLightbox)
+    }
+
+});
 
 // ===============================
-// Gallery Lightbox
+// Lightbox
 // ===============================
 
-const galleryImages = document.querySelectorAll(".gallery img");
-const lightbox = document.getElementById("lightbox");
+const lightbox    = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector(".close");
+const closeBtn    = document.querySelector(".close");
 
-galleryImages.forEach(image => {
+function wireGalleryLightbox() {
 
-    image.addEventListener("click", () => {
+    const allImgs = document.querySelectorAll(".gallery img");
 
-        lightbox.style.display = "flex";
-        lightboxImg.src = image.src;
+    allImgs.forEach(img => {
+
+        img.addEventListener("click", (e) => {
+            e.stopPropagation(); // don't re-trigger gallery expand
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        });
 
     });
 
-});
+}
 
 closeBtn.addEventListener("click", () => {
-
     lightbox.style.display = "none";
-
 });
 
 lightbox.addEventListener("click", (e) => {
-
-    if(e.target === lightbox){
-
+    if (e.target === lightbox) {
         lightbox.style.display = "none";
-
     }
-
 });
