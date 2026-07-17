@@ -149,22 +149,40 @@ section h2::after{
 
 /* Journey */
 
-.journey-box{
-    max-width:950px;
+.story-box{
+    max-width:1000px;
     margin:auto;
-    padding:45px;
-    border-radius:22px;
-    background:rgba(255,255,255,.05);
+    padding:50px;
+    background:rgba(255,255,255,.06);
     backdrop-filter:blur(14px);
     border:1px solid rgba(255,255,255,.08);
-    box-shadow:0 20px 45px rgba(0,0,0,.3);
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    transition:.4s;
 }
 
-.journey-box h3{
-    text-align:center;
+.story-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+.story-box h3{
     color:#FFD54F;
-    margin-bottom:35px;
-    font-size:30px;
+    text-align:center;
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.story-box p{
+    font-size:18px;
+    line-height:2;
+    color:#e8e8e8;
+    text-align:justify;
+    margin-bottom:25px;
+}
+
+.story-box p:last-child{
+    margin-bottom:0;
 }
 
 .year{
