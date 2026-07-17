@@ -1,6 +1,4 @@
-// ===============================
-// Achievement Counter Animation
-// ===============================
+
 
 const counters = document.querySelectorAll(".stats h1");
 
