@@ -4,145 +4,115 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Table Tennis Journey</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-rel="stylesheet">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- ── Header ── -->
 <header>
-
-<nav>
-
-<h2 class="logo">
-🏓 Table Tennis
-</h2>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#journey">Journey</a></li>
-
-<li><a href="#gallery">Gallery</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
+  <nav>
+    <h2 class="logo">🏓 Table Tennis</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<!-- ── Hero ── -->
 <section id="home" class="hero">
-
-<div class="overlay">
-
-<h1>Table Tennis Memories</h1>
-
-<p>
-From the first serve to championship dreams.
-Every rally tells a story.
-</p>
-
-<a href="#journey" class="btn">
-Start the Journey
-</a>
-
-</div>
-
+  <div class="overlay">
+    <div class="hero-badge">🏆 My Story</div>
+    <h1>Table Tennis<br>Memories</h1>
+    <p>From the first serve to championship dreams.<br>Every rally tells a story.</p>
+    <a href="#journey" class="btn">Start the Journey</a>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
 </section>
 
+<!-- ── Journey ── -->
 <section id="journey">
-
-    <h2>My Story</h2>
-
-    <div class="story-box">
-
-        <h3>🏓 My Table Tennis Journey</h3>
-
-        <p>
-            I first picked up a paddle in 2012 after my dad built a table tennis 
-            table for my sister. Once I tried it, my dad noticed my potential right 
-            away. By the next year, I was entering tournaments without any formal 
-            coaching, and surprisingly, I took home gold in my very first one. 
-            Even without proper training, I kept winning gold and silver medals.
-        </p>
-
-        <p>
-            But after a heartbreaking, very tough loss in a crucial match,
-             my mom looked on Facebook to find me a real coach. 
-             That decision shaped me into the player I am today. 
-             Along the way, I met so many incredible friends who became 
-             family, and I will cherish these memories forever.
-        </p>
-
-    </div>
-
+  <h2>My Story</h2>
+  <div class="story-box reveal">
+    <h3>🏓 My Table Tennis Journey</h3>
+    <p>
+      I first picked up a paddle in 2012 after my dad built a table tennis
+      table for my sister. Once I tried it, my dad noticed my potential right
+      away. By the next year, I was entering tournaments without any formal
+      coaching, and surprisingly, I took home gold in my very first one.
+      Even without proper training, I kept winning gold and silver medals.
+    </p>
+    <p>
+      But after a heartbreaking, very tough loss in a crucial match,
+      my mom looked on Facebook to find me a real coach.
+      That decision shaped me into the player I am today.
+      Along the way, I met so many incredible friends who became
+      family, and I will cherish these memories forever.
+    </p>
+  </div>
 </section>
 
+<!-- ── Gallery ── -->
 <section id="gallery">
-    <h2>Gallery</h2>
+  <h2>Gallery</h2>
 
-    <div class="gallery-wrapper">
-
-        <div class="gallery">
-            <img src="images/multo.jpg" alt="Multo">
-            <img src="images/ogfam.jpg" alt="OG Fam">
-            <img src="images/hometraining.jpg" alt="Home Training">
-            <img src="images/heroo.jpg" alt="Hero">
-            <img src="images/palo.jpg" alt="olap">
-            <img src="images/tourna.jpg" alt="ment">
-            <img src="images/pasdam.jpg" alt="dam">
-            <img src="images/north.jpg" alt="norte">
-            <img src="images/night.jpeg" alt="">
-            <img src="images/night2.jpeg" alt="">
-            <img src="images/night3.jpeg" alt="">
-            <img src="images/night4.jpeg" alt="">
-            <img src="images/night5.jpeg" alt="">
-            <img src="images/night6.jpeg" alt="">
-        </div>
-
+  <div class="gallery-wrapper">
+    <div class="gallery">
+      <img src="images/multo.jpg"        alt="Multo">
+      <img src="images/ogfam.jpg"        alt="OG Fam">
+      <img src="images/hometraining.jpg" alt="Home Training">
+      <img src="images/heroo.jpg"        alt="Hero">
+      <img src="images/palo.jpg"         alt="Palo">
+      <img src="images/tourna.jpg"       alt="Tournament">
+      <img src="images/pasdam.jpg"       alt="Pasdam">
+      <img src="images/north.jpg"        alt="North">
+      <img src="images/night.jpeg"       alt="Night 1">
+      <img src="images/night2.jpeg"      alt="Night 2">
+      <img src="images/night3.jpeg"      alt="Night 3">
+      <img src="images/night4.jpeg"      alt="Night 4">
+      <img src="images/night5.jpeg"      alt="Night 5">
+      <img src="images/night6.jpeg"      alt="Night 6">
     </div>
+    <div class="gallery-hint">
+      <i class="fas fa-hand-pointer"></i>
+      <span>Tap to expand all photos</span>
+    </div>
+  </div>
 
-    <p class="gallery-expand-hint"> Click the photos to expand</p>
+  <button class="gallery-toggle-btn" id="galleryToggleBtn">
+    <i class="fas fa-chevron-up"></i>&nbsp; Show Less
+  </button>
 
 </section>
 
+<!-- ── Contact ── -->
 <section id="contact">
-
-<h2>Stay Connected</h2>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-youtube"></i>
-
-</div>
-
+  <h2>Stay Connected</h2>
+  <p>Follow the journey and never stop improving.</p>
+  <div class="social">
+    <a class="social-link" href="#"><i class="fab fa-facebook"></i></a>
+    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+    <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
+  </div>
 </section>
 
+<!-- ── Footer ── -->
 <footer>
-
-<p>
-© 2026 Table Tennis Memories
-</p>
-
+  <p>© 2026 Table Tennis Memories &nbsp;·&nbsp; Made with ❤️ and 🏓</p>
 </footer>
 
+<!-- ── Lightbox ── -->
 <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" alt="">
 </div>
 
 <script src="script.js"></script>
-</body>
 </body>
 </html>
