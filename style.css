@@ -215,37 +215,6 @@ section h2::after{
 
 /* Achievements */
 
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:35px;
-    flex-wrap:wrap;
-}
-
-.stats div{
-    width:240px;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(12px);
-    transition:.4s;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
-}
-
-.stats div:hover{
-    transform:translateY(-12px);
-}
-
-.stats h1{
-    color:#FFD54F;
-    font-size:55px;
-}
-
-.stats p{
-    margin-top:10px;
-    color:#ddd;
-}
 
 /* Gallery */
 

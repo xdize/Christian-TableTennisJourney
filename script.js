@@ -1,45 +1,5 @@
 
 
-const counters = document.querySelectorAll(".stats h1");
-
-counters.forEach(counter => {
-
-    const target = parseInt(counter.innerText);
-
-    let current = 0;
-
-    const update = () => {
-
-        const increment = Math.ceil(target / 50);
-
-        if(current < target){
-
-            current += increment;
-
-            if(current > target){
-                current = target;
-            }
-
-            if(target >= 20){
-                counter.innerText = current + "+";
-            }else{
-                counter.innerText = current;
-            }
-
-            setTimeout(update,30);
-
-        }else{
-
-           counter.innerText = target + "+";
-
-        }
-
-    };
-
-    update();
-
-});
-
 
 // ===============================
 // Gallery Lightbox
