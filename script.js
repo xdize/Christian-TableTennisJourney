@@ -77,6 +77,7 @@ function closeLightbox() {
 function wireGalleryLightbox() {
     document.querySelectorAll('.gallery img').forEach(img => {
         img.addEventListener('click', (e) => {
+            if (!isExpanded) return; // let the click bubble up to re-expand the fan
             e.stopPropagation();
             openLightbox(img.src);
         });
